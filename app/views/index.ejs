@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <fieldset style="text-align:center">
+      <form action="/submit" method="POST">
+            <label style="font-size: 30px" for="Username">User : </label>
+            <input required type="text" name="User" id="Username" />
+            <br>
+            <label style="font-size: 30px" for="Password">Password</label>
+            <input required type="text" name="Password" id="Password" />
+      <br>
+        <button style="width: 100px" type="submit">Login</button>
+        <button style="width: 100px" type="reset">Clear</button>
+      </form>
+    </fieldset>
+    <% if(err) {%>
+      <p style="color: red">Incorrect username or password</p>
+      <br>
+      <% } %>
+    
+  
+  </body>
+</html>
